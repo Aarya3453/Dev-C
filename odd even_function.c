@@ -1,30 +1,28 @@
 #include<stdio.h>
+  
+int oddeven(int n)
 
-int oddeven(int n);
+{   
+    return (n & 1);
+}
 
 int main()
 
 {
-	int n;
-	
-	printf("\n Enter the number :");
-	scanf("%d",&n);
-	
-	if(n%2==0)
-	{
-		printf("\n Even number");
-	}
-	
-	else
-	{
-		printf("\n Odd number");
-	}
-	
-	return 0;
-}
+    int n;
+	    
+    printf("\n Enter tye number : ");
+    scanf("%d", &n);
 
-int oddeven(int n)
+    if(oddeven(n))
+    {
+        printf("\n The entered number is odd.");
+    }
 
-{
-	return n;
+    else
+    {
+        printf("\n The entered number is even.");
+    }
+
+    return 0;
 }
